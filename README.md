@@ -50,10 +50,13 @@ gpg --list-secret-keys --keyid-format LONG
 Copy the key and add individually the config below:
 
 ```bash
-git config --local user.signingkey <key>
-git config --local gpg.program gpg2
-git config --local commit.gpgsign true
+git config --global user.signingkey <key>
+git config --global gpg.program gpg2
+git config --global commit.gpgsign true
 ```
+
+It doesn't need to be specifically `--global`, I used with `--local` instead and it worked.
+
 ## References
 
 - [Generating a new GPG key](https://help.github.com/en/github/authenticating-to-github/generating-a-new-gpg-key)

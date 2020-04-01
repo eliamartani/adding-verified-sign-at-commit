@@ -47,7 +47,7 @@ The same way as the longest key copy the shortest key after `rsa2048/` in the sa
 gpg --list-secret-keys --keyid-format LONG
 ```
 
-Copy the key and add individually the config below:
+Copy the key and replace at `<key>` mark and add individually the commands below:
 
 ```bash
 git config --global user.signingkey <key>
